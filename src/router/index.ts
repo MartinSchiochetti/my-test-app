@@ -9,7 +9,16 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/folder/:id',
     component: () => import ('../views/FolderPage.vue')
-  }
+  },
+    {
+    path: '/list',
+    component: () => import ('../views/ListPage.vue')
+  },
+
+      {
+    path: '/form',
+    component: () => import ('../views/FormPage.vue')
+  },
 ]
 
 const router = createRouter({
